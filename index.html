@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Money Machine</title>
+<meta name="description" content="Build a Money Machine">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="main.js"></script>	
+</head>
+
+<body id="nitemode" onload="startTime(); lightMode();">
+    
+<div id="title">
+<h1>Money Machine</h1>
+<!--<div id="cogs" class="fa fa-cogs">
+</div>-->
+<span id="cog" class="fa fa-cog slow-spin"></span>
+<div id="smallcogs">
+<span id="cog2" class="fa fa-cog slow-spin"></span><br>
+<span id="cog3" class="fa fa-cog slow-spin"></span>	
+</div>
+<div id="version">1.0 </div>
+<div id="moonbutton"><button id="moon" class="fa fa-moon-o" aria-hidden="true" onclick="niteMode(); dayMode();"></button></div>
+</div>
+
+
+<div id="dateTime"></div>
+<br>	
+<div id="intro"><p class="smallp">What if you could build a real Money Machine? <br> Fill in the fields below to learn how... </p></div>
+
+<div class="wrapper">    
+<div class="container">
+    
+<h2 id="header">Income</h2>
+
+<form><input type="text" placeholder="Income 1" id="income1" onkeyup="addTotalIncome()"/></form>
+
+<form><input type="text" placeholder="Income 2" id="income2" onkeyup="addTotalIncome()"/></form>
+	
+<!--<button onclick="addIncomeField()">+</button>-->	
+
+<br>
+
+	<h4 id="moneySign">$</h4><h4 id="moneyDots">...</h4>
+<h4 id="totalIncomeField"></h4>
+
+<h2 id="header">Expenses</h2>
+<form><input type="text" placeholder="Rent" id="rent" onkeyup="addtotalexpense()" title="Rent"/></form>
+<form><input type="text" placeholder="Phone" id="phonebill" onkeyup="addtotalexpense()"/></form>	
+<form><input type="text" placeholder="Internet" id="internet" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Utility" id="electricity" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Food" id="groceries" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Car" id="car" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Insurance" id="insure" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Other" id="other1" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Other" id="other2" onkeyup="addtotalexpense()"/></form>
+<form><input type="text" placeholder="Other" id="other3" onkeyup="addtotalexpense()"/></form>
+	
+<br>
+
+<h4 id="moneySign2">$</h4><h4 id="moneyDots2">...</h4>
+<h4 id="totalexpensefield"></h4><br>
+  
+
+<h2>Remainder</h2>  
+
+<h4 id="moneySign3">$</h4><h4 id="moneyDots3">...</h4>
+	<h4 id="remainderField"></h4>
+	
+	<div class="sign1">
+	<span id="whatToDO"></span>    
+	</div>
+		
+	<div class="sign2">
+	<span class="signs" id="whatNotToDO"></span>
+	</div>
+		
+	<br><br>
+	
+<button id="button-bt" onclick="remainder();">Calculate Remainder</button>
+
+</div>
+
+<div class="container2">
+
+    <h2 class="mmbuilder"><span>Money Machine Builder &#8681;</span></h2><br><p>If you save</p><h5 id="moneySign4">$</h5><h5 id="moneyDots4">...</h5>
+<h5 id="remainderField2"></h5>
+    <p>per month for</p>
+    
+    <form><input type="text" placeholder="Enter Years" id="xYearsId" onkeyup="calculateSavings();"/></form>
+	<p>years, you will have saved</p>
+    <h5 id="moneySign5">$</h5><h5 id="moneyDots5">...</h5><h5 id="totalSavingsId"></h5><br>
+    
+	<br><br>
+	
+	<p>Now lets put some fuel in this machine...</p> <p class="smallp">Thanks to the magic of <span title="What is 'Compounding'?
+		Compounding is the process where the value of an investment increases because the earnings on an investment, both capital gains and interest, earn interest as time passes. This exponential growth occurs because the total growth of an investment along with its principal earn money in the next period. This differs from linear growth, where only the principal earns interest each period."><a href="http://www.investopedia.com/terms/c/compounding.asp" target="_blank" style="color: #006a34">compounding</a></span> , if you add "Interest Earned" year over year the growth of your money will be actually be much greater!<br><p >With an anual rate of</p>
+    <form><input type="text" placeholder="Enter Rate" id="compoundId" onkeyup="calculateSavingsCompounded()"/></form>
+	<h5>%</h5><p>you will have actually saved</p><h5 id="moneySign6">$</h5><h5 id="moneyDots6">...</h5>
+    <h5 id="totalSavingsCompoundedId"></h5><br>  
+    
+	<br><br>
+	
+	<p>That is a difference of </p><h5 id="moneySign7">$</h5><h5 id="moneyDots7">...</h5>
+	<h5 id="differenceId"></h5>
+	<p>that you didn't have to work for!</p>
+	
+	<div id="advertBackground">
+	<img src="/webdesign/moneymachine/images/warrenHead.png" alt="ad1" id="advert1" onclick="changead();">
+	<div class="advertText">"Great Job!"</div>	
+	</div>
+	
+		
+</div>
+
+<div class="footer">&copy Table of Contents Studio</div>	
+	
+</div>
+
+</body>
+
+</html>

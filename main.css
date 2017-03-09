@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+	background-color: white;
+	/* background-image: url("/images/warrenHead.png");*/
+} 
+
+.wrapper{
+    width: 100%
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    width: 49%;
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    border: 0px solid springgreen;
+}
+
+.container2{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    border: 3px solid #00B258;
+    box-shadow: 10px 10px #00B258;
+}
+
+#title {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 10px;
+	border: solid 3px #00B258;
+	box-shadow: 7px 7px #00B258;	
+    }
+
+#cog{
+	display: inline-block;
+	font-size: 45px;
+	color: #00B258;
+}
+
+#smallcogs {
+	display: inline-block;
+	font-size: 22px;
+	color: #00B258;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
+
+#version {
+	display: inline-block;
+	margin-left: 7px;
+	color: #00B258;
+}
+
+#moonbutton {
+	text-align: right;
+	padding-right: 7px;
+	margin-bottom: 7px;
+}
+
+#moon {
+	color: #00B258;
+}
+
+#dateTime {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+	font-weight: 400px;
+    color: #00B258;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 13px;
+}
+
+#intro .smallp {
+	text-align: center;
+	line-height: 41px;
+	padding-bottom: 49px;
+}
+
+#moneySign {
+	display: inline;
+}
+
+#moneyDots {
+	display: inline;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 49px;
+	font-weight: 700;
+    color: #00B258;
+	line-height: 52px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    }
+
+.smallp {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+	font-weight: 700;
+    color: #00B258;
+	line-height: 35px;
+	margin-top: 17px;
+	margin-bottom: 17px;
+    }
+
+h1 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 37px;
+  color: #00B258;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 49px;
+  color: #00B258;
+  text-decoration: underline;
+  margin-top: 17px;
+}
+
+.mmbuilder span {
+	/*background-color: springgreen;*/
+	box-shadow: 0px 0px;
+}
+
+
+h4 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 49px;
+  color: #006a34;
+}
+
+h5 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 49px;
+  color: #006a34;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+form {
+	display: inline-block;
+	width: 43%;
+	padding: 7px;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 27px; 
+  width: 90%; 
+  border-style: dashed;
+  border-color: #00B258;
+  color: #00B258;
+  padding: 3px;
+  background-color: white;
+
+}
+
+#button-bt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 3px;
+  background-color: #00B258;
+  box-shadow: 10px 10px #00B258;
+  border: solid 3px white;
+}
+
+.sign1 {
+	width: 90%;
+	box-shadow: 10px 10px #00B258;
+	border: solid 3px #00B258;
+	}
+
+#whatToDO {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color: #00B258;
+}
+
+.sign2 {
+	width: 90%;
+	background-color: pink;
+	box-shadow: 10px 10px pink;
+	
+	}	
+	
+#whatNotToDO {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color: #ff7373;
+  background: pink;
+  
+}
+
+#advertBackground {
+	margin-top: 33px;
+	margin-bottom: 30px;
+	background-color: yellow;
+}
+
+.advertText {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 33px;
+    font-weight: 700;
+    color: white;
+	text-align: center;
+	margin: -33px;
+	border: solid 0px white;
+}
+
+#advert1 {
+	width: 100%;
+	height: auto;
+}
+
+.footer {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+    font-weight: 700;
+    color: #00B258;
+	height: 100px;
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 33px;
+	line-height: 100px; 
+	text-align: center;
+	border: solid 3px #00B258;
+	box-shadow: 7px 7px #00B258;
+}
+
+/* ////////// MEDIA WIDTH IPHONE 6 ////////// */
+
+@media only screen and (max-width: 500px) {
+
+.wrapper{
+    width: 100%
+    margin: auto;
+    padding: 10px;
+}
+	
+#title {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 11px;
+    	box-shadow: 10px 10px #00B258;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  color: #00B258;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 0px;
+}
+
+#moonbutton {
+	text-align: right;
+	padding-right: 7px;
+	margin-bottom: 3px;
+}
+
+#dateTime {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 31px;
+    color: #00B258;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 13px;
+}
+
+#intro .smallp {
+	padding: 11px;
+}
+	        
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+	
+.container2 {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+	
+#moon {
+	padding-right: 4px;
+	margin-bottom: 3px;
+}
+	
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 49px;
+  text-decoration: underline;
+  margin-top: 17px;
+}
+
+h6 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 39px;
+  color: #00B258;
+  margin-top: 13px;
+  }
+	
+h4 {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 49px;
+  color: #006a34;
+  margin-top: 0px;
+  border: solid 0px blue;
+}
+
+form {
+	display: inline-block;
+	width: 100%;
+}
+		
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 27px; 
+  width: 100%;
+  margin-top: 0px; 
+}
+	
+.sign1 {
+	width: 300px;
+	box-shadow: 10px 10px #00B258;
+	border: solid 3px #00B258;
+	}
+
+#whatToDO {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color: #00B258;
+}
+
+.sign2 {
+	width: 300px;
+	background-color: pink;
+	box-shadow: 10px 10px pink;
+	
+	}	
+	
+#whatNotToDO {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color: #ff7373;
+  background: pink;
+  
+}
+
+}
